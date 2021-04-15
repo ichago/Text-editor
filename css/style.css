@@ -26,7 +26,7 @@ label.logo{
 }
 nav ul{
 	float: right;
-	margin-right: 20px;
+	margin-right: 80px;
 }
 nav ul li{
 	display: inline-block;
@@ -139,22 +139,21 @@ footer div.wor{
   width: 50%;}
 footer h1{
   line-height: 80px;
-  font-size: 30px;
+  font-size: 20px;
   color: #D5D5D5;
 }
 footer div.adv h1{
   float: left;
-  margin-left: 170px;
+  margin-left: 110px;
 }
 footer div.wor h1{
   float: right;
-  margin-right: 190px; 
+  margin-right: 110px; 
 }
 footer div.wor p{
-  font-size: 21px;
-  margin-top: 47px;
-  float: right;
-  padding: 0 214px;
+  font-size: 16px;
+  margin-top: 120px;
+  padding-left: 547px;
   color: #C5C5C5;
   }
   footer div.adv div.social{
@@ -162,6 +161,12 @@ footer div.wor p{
     margin-top: 80px; 
     display: flex;
     opacity: 0.8;
+  }
+  footer div.adv div.social div.instagram{
+    background-image: url("instamena.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 60px 60px;
   }
 footer div.dos{
    height: 65px;
@@ -175,13 +180,12 @@ footer div.dos p{
   line-height: 380px;
   width: 30%;
   float: left;
-  margin: 0 164px;
+  margin: 0 95px;
   color: #C5C5C5;
   opacity: 0.9;
      }
 footer div.dos img{
-  margin-left: 220px;
-  margin-top: 140px;
+  padding-right: 30px
 }
 section .image{
  position: scroll;
