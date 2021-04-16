@@ -62,6 +62,7 @@ nav label.checkbtn{
   display: inline-block;
   height: 60%;
   width: 100%;
+  background-color: #EAEAEC;
 }
 #contentindex div.com{
   background-image: url("grd.png");
@@ -88,34 +89,38 @@ nav label.checkbtn{
   text-align: center;
   color: #E5EBEA;
 }
+#contentindex div.describe{
+  display: flex;
+  margin: 160px 0;
+}
+#contentindex div.describe div.text{
+  margin: 120px 0;
+  float: left;
+  width: 40%;
+}
+#contentindex div.describe div.text h2{
+  font-size: 20px;
+  margin: 40px 100px;
+  color: black;
+}
+#contentindex div.describe div.text p{
+  line-height: 28px;
+  margin: 30px 100px; 
+font-size: 18px;
+color: black;
+}
+#contentindex div.describe div.screenshot{
+  width: 60%;
+  float: right;
+}
+.screenshot img{
+width: 100%;
+
+}
 #contentlog {
 display: flex;
 }
-#contentindex div.lone{
-  display:flex;
-  height: 50%;
-}
-#contentindex div.one{
-  
-  margin-top: 230px;
-  margin-bottom: 130px;
-  width: 50%;
-}
-#contentindex div.one h2{
-  padding-top: 120px;
-  font-size: 200%;
-  color: #2D7067;
-  font-family: "helvetica",fantasy;
-  text-align: center;
-}
-#contentindex div.one p{
-  padding-top: 8px;
-  color: #014C42;
-  font-size: 160%;
-  font-family: "helvetica";
-  text-align: center;
-  text-transform: capitalize;
-} 
+
 footer{
   width: 100%;
   height: 350px;
@@ -187,15 +192,7 @@ footer div.dos p{
 footer div.dos img{
   padding-right: 30px
 }
-section .image{
- position: scroll;
- top: 50%;
- width: 50%;
-}
-section .image img{
-  width: 100%;
-  object-fit: cover;
-}
+
 @media (max-width: 1081px){
   #contentindex div.com h3.t2{
     font-size: 36px;}
