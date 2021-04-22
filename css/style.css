@@ -89,12 +89,34 @@ nav label.checkbtn{
   text-align: center;
   color: #E5EBEA;
 }
+#contentindex div.com li{
+  margin-top: 140px;
+  text-align: center;
+  width: 300px;
+ margin-bottom: 100px;
+ margin-left:580px; 
+}
+#contentindex div.com li input{
+  padding: 15px 0;
+  font-size: 20px;
+    color: #00c9ff;
+  font-weight: bold;
+  width: 100%;
+  background-color: white; 
+  opacity: 0.8;
+   border:none;
+   border-radius: 50px;
+}
+#contentindex div.com li:hover input{
+  transition: 0.3s;
+  opacity: 1;
+}
 #contentindex div.describe{
   display: flex;
   margin: 160px 0;
 }
 #contentindex div.describe div.text{
-  margin: 120px 0;
+  margin: 60px 0;
   float: left;
   width: 40%;
 }
@@ -193,15 +215,78 @@ footer div.dos img{
   padding-right: 30px
 }
 
+@media (max-width: 1290px){
+  #contentindex div.describe div.text {
+    margin: 44px 0;
+  }
+  #contentindex div.describe div.text h2{
+    font-size: 18px;}
+  #contentindex div.describe div.text p{
+    font-size: 16px;}
+  }
+  @media (max-width: 1175px){
+  #contentindex div.describe div.text {
+    margin: 38px 0;
+  }
+  @media (max-width: 1106px){
+  #contentindex div.describe div.text {
+    margin: 24px 0;
+  }
+  #contentindex div.describe div.text h2{
+    font-size: 16px;}
+  #contentindex div.describe div.text p{
+    font-size: 14px;}
 @media (max-width: 1081px){
   #contentindex div.com h3.t2{
     font-size: 36px;}
+    #contentindex div.describe div.text {
+    margin: 18px 0;
   }
+  }
+ @media (max-width: 1033px){
+  #contentindex div.describe {
+    display: inline-block;
+  }
+   #contentindex div.describe div.text{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    margin-bottom: 140px;
+  }
+  #contentindex div.describe div.text h2{
+    width: 50%;
+font-size: 18px; 
+margin-left: 100px;
+margin-top: 100px; 
+text-align: center;
+}
+#contentindex div.describe div.text p{ 
+  width: 50%;
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0 180px;
+}
+#contentindex div.describe div.screenshot{
+  width: 80%;
+  margin: 0 100px;
+}
+
  @media (max-width: 974px){
   #contentindex div.com h3.t1{
     font-size: 105px; }
     #contentindex div.com h3.t2{
     font-size: 30px;}
+    #contentindex div.describe div.text h2{
+      margin-top: 70px;
+  margin-left: 80px;
+font-size: 17px; 
+
+}
+#contentindex div.describe div.text p{ 
+  width: 50%;
+  font-size: 14px;
+   margin: 0 90px;
+}
   }
 @media (max-width: 961px){
    nav label.logo{
@@ -212,6 +297,16 @@ footer div.dos img{
     font-size: 90px; }
     #contentindex div.com h3.t2{
     font-size: 27px; }
+    #contentindex div.describe div.text h2{
+  margin-left: 60px;
+font-size: 16px; 
+
+}
+#contentindex div.describe div.text p{ 
+  width: 50%;
+  font-size: 13px;
+  margin: 0 70px;
+}
 
 }					
 @media (max-width: 862px){
@@ -250,19 +345,48 @@ footer div.dos img{
     #contentindex div.com h3.t2{
       padding-top: 38vh;
   }
+  #contentindex div.describe div.text h2{
+  
+font-size: 13px; 
+
+}
+#contentindex div.describe div.text p{ 
+  width: 50%;
+  font-size: 12px;
+  
+}
+  
 }
 @media (max-width: 745px){
   #contentindex div.com h3.t1{
     font-size: 55px; }
     #contentindex div.com h3.t2{
     font-size: 25px;}
+    
+ #contentindex div.describe div.text h2{
+  
+ margin-left:  40px;
+
+}
+#contentindex div.describe div.text p{ 
+  margin: 0 50px;
+}
   }
+  
   @media (max-width: 525px){
   #contentindex div.com h3.t1{
     font-size: 45px; }
     #contentindex div.com h3.t2{
       padding-top: 39vh;
     font-size: 18px;}
+    #contentindex div.describe div.text h2{
+  
+ margin-left:  30px;
+
+}
+#contentindex div.describe div.text p{ 
+  margin: 0 35px;
+}
   }
 @media (max-width: 426px){
 	nav label.checkbtn{
@@ -304,7 +428,16 @@ footer div.dos img{
     left:0;
     top:80px;
    }
+    #contentindex div.describe div.text h2{
+  font-size: 11px
+ margin-left:  20px;
 
+}
+#contentindex div.describe div.text p{ 
+  font-size: 8px;
+  margin: 0 0;
+}
+   
 }	
 @media (max-width: 412px){
   nav label.checkbtn{
@@ -314,6 +447,7 @@ footer div.dos img{
     font-size: 25px;
      padding-left: 24px; 
   }
+  
   
 } 
 @media (max-width: 344px){
