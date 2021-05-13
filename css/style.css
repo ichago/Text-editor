@@ -4,6 +4,7 @@
 	text-decoration: none;
 	list-style-type: none;
 	box-sizing: border-box;
+ scroll-behavior: smooth;
 }
 body{
 	font-family: "helvetica";
@@ -17,7 +18,7 @@ nav{
     -moz-box-shadow: 0 8px 8px -6px #999;
     box-shadow: 0 8px 8px -6px #888;
 }
-label.logo{ 
+label.logo a{ 
 	color: #00c9ff;
 	font-size: 25px;
 	line-height: 80px; 
@@ -58,80 +59,89 @@ nav label.checkbtn{
 #check{
 	display: none;
 }
-#contentindex{
+div.contentindex{
   display: inline-block;
   height: 60%;
   width: 100%;
   background-color: #EAEAEC;
+  -webkit-box-shadow: 0 8px 10px -6px #999;
+    -moz-box-shadow: 0 8px 10px -6px #999;
+    box-shadow: 0 8px 8px -6px #888;
 }
-#contentindex div.com{
+div.contentindex #com{
   background-image: url("grd.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 8px;
 }
-#contentindex div.com h3{
+div.contentindex #com h3{
   top: 0;
   padding-top:260px;
   font-family: "helvetica", fantasy;
 }
-#contentindex div.com h3.t1{
+div.contentindex #com h3.t1{
    font-weight: bold;
   font-size: 130px;  
   text-align: center;
   color: white;
 }
-#contentindex div.com h3.t2{
+div.contentindex #com h3.t2{
   padding-top: 40vh;
   padding-bottom: 200px;
   font-size: 40px;
   text-align: center;
-  color: #E5EBEA;
+  color: white;
 }
-#contentindex div.com li{
+div.contentindex #com li{
   margin-top: 140px;
-  text-align: center;
-  width: 300px;
  margin-bottom: 100px;
- margin-left:580px; 
-}
-#contentindex div.com li input{
-  padding: 15px 0;
+  padding: 18px 4px;
   font-size: 20px;
-    color: #00c9ff;
   font-weight: bold;
-  width: 100%;
+  margin-left: 610px;
+  width: 15%; 
   background-color: white; 
-  opacity: 0.8;
+  opacity: 1;
    border:none;
    border-radius: 50px;
 }
-#contentindex div.com li:hover input{
-  transition: 0.3s;
-  opacity: 1;
+div.contentindex #com li a{
+  text-align: center;
+  padding: 18px 50px;
+color: #00c9ff;
 }
-#contentindex div.describe{
+div.contentindex #com li:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+div.contentindex #container{
+  padding-top: 40px;
+  margin: 0;
+  width: 100%;
+}
+div.contentindex div.describe{
   display: flex;
   margin: 160px 0;
+  margin-bottom: 260px;
 }
-#contentindex div.describe div.text{
+div.contentindex div.describe div.text{
   margin: 60px 0;
   float: left;
   width: 40%;
 }
-#contentindex div.describe div.text h2{
+div.contentindex div.describe div.text h2{
   font-size: 20px;
   margin: 40px 100px;
   color: black;
 }
-#contentindex div.describe div.text p{
+div.contentindex div.describe div.text p{
   line-height: 28px;
   margin: 30px 100px; 
 font-size: 18px;
 color: black;
 }
-#contentindex div.describe div.screenshot{
+div.contentindex div.describe div.screenshot{
   width: 60%;
   float: right;
 }
@@ -139,15 +149,80 @@ color: black;
 width: 100%;
 
 }
-#contentlog {
-display: flex;
+
+
+div.sep{
+margin-top: 360px;
+background-color: #374A4B;
+margin-bottom: 420px;
+}
+div.sep h1{
+  color: white;
+  padding: 20px 660px;
+}
+
+div.team{
+  margin-top: 400px;
+  display: flex;
+  width: 100%;
+  background-color: #374A4B;
+  margin-bottom: 840px;
+}
+div.team p{
+  color: white;
+  font-weight: bold;
+}
+div.team div.profiles{
+  width: 40%;
+}
+div.team div.profiles p{
+  margin-top: 90px;
+  font-size: 17px;
+}
+div.team div.profiles div.profile1{
+  margin: 90px 100px;
+}
+div.team div.profiles div.profile1 p{
+
+}
+div.team div.profiles div.profile1 img{
+  height: 220px;
+  width: 220px;
+  margin-left: 35px;
+   border-radius:50%; 
+}
+div.team div.profiles div.profile2{
+  margin: 90px 100px;
+}
+div.team div.profiles div.profile2 img{
+  height: 220px;
+  width: 220px;
+  margin-left: 35px;
+   border-radius:50%; 
+}
+div.team div.profiles div.profile2 p{
+ 
+  }
+div.team div.comments{
+  width: 60%;
+}
+div.team div.comments div.comment1{
+  margin-top:200px;
+}
+div.team div.comments div.comment2{
+  margin-top:400px;
+}
+div.team div.comments p{
+  text-align: center;
+  margin-bottom: 60;
+  font-size: 30px;
+
 }
 
 footer{
   width: 100%;
-  height: 350px;
+  height: 500px;
   background-color:#374A4B;
-  margin-top: 40px;
   bottom: 0;
   display: inline-block;
 }
@@ -158,20 +233,12 @@ footer div.uno{
   background-color: #374A4B;
   margin-top: 10px;
 }
-footer div.adv{
-  display: inline-block;
-  width: 50%; 
-}
 footer div.wor{
   width: 50%;}
 footer h1{
   line-height: 80px;
   font-size: 20px;
   color: #D5D5D5;
-}
-footer div.adv h1{
-  float: left;
-  margin-left: 110px;
 }
 footer div.wor h1{
   float: right;
@@ -180,20 +247,32 @@ footer div.wor h1{
 footer div.wor p{
   font-size: 16px;
   margin-top: 120px;
-  padding-left: 547px;
+  padding-left: 433px;
   color: #C5C5C5;
   }
-  footer div.adv div.social{
-    margin-left: 174px;
-    margin-top: 80px; 
+  footer  div.social{
+    margin-left:185px;
+    margin-top: 260px; 
     display: flex;
-    opacity: 0.8;
   }
-  footer div.adv div.social div.instagram{
-    background-image: url("instamena.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 60px 60px;
+  footer  div.social img{
+    opacity: 1;
+  }
+  footer  div.social a:hover img{
+    transition: 0.3s;
+    opacity: 0.7;
+  }
+  footer div.lisence{
+    margin-left: 100px;
+  }
+  footer div.lisence h1{
+    margin-right: 300px;
+  }
+  footer div.lisence p{
+    font-size: 16px;
+  margin-top: 42px;
+  padding-left: 5px;
+  color: #C5C5C5; 
   }
 footer div.dos{
    height: 65px;
@@ -203,11 +282,14 @@ footer div.dos{
    padding-bottom: 140px;
 }
 footer div.dos p{
+  padding-top: 100px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 380px;
-  width: 30%;
+  line-height: 30px;
+  width: 100%;
   float: left;
-  margin: 0 95px;
+  text-align: center;
+  margin: 200px 0;
   color: #C5C5C5;
   opacity: 0.9;
      }
@@ -215,100 +297,183 @@ footer div.dos img{
   padding-right: 30px
 }
 
-@media (max-width: 1290px){
-  #contentindex div.describe div.text {
-    margin: 44px 0;
-  }
-  #contentindex div.describe div.text h2{
-    font-size: 18px;}
-  #contentindex div.describe div.text p{
-    font-size: 16px;}
-  }
-  @media (max-width: 1175px){
-  #contentindex div.describe div.text {
-    margin: 38px 0;
-  }
-  @media (max-width: 1106px){
-  #contentindex div.describe div.text {
-    margin: 24px 0;
-  }
-  #contentindex div.describe div.text h2{
-    font-size: 16px;}
-  #contentindex div.describe div.text p{
-    font-size: 14px;}
-@media (max-width: 1081px){
-  #contentindex div.com h3.t2{
-    font-size: 36px;}
-    #contentindex div.describe div.text {
-    margin: 18px 0;
-  }
-  }
- @media (max-width: 1033px){
-  #contentindex div.describe {
-    display: inline-block;
-  }
-   #contentindex div.describe div.text{
-    width: 100%;
-    display: flex;
-    width: 100%;
-    margin-bottom: 140px;
-  }
-  #contentindex div.describe div.text h2{
-    width: 50%;
-font-size: 18px; 
-margin-left: 100px;
-margin-top: 100px; 
-text-align: center;
+
+
+
+
+
+
+@media (max-width: 1296px){
+div.contentindex #com li{
+ margin-left: 510px;
 }
-#contentindex div.describe div.text p{ 
-  width: 50%;
-  font-size: 15px;
-  line-height: 28px;
-  margin: 0 180px;
+div.contentindex #com li a{
+  padding: 18px 36px;
 }
-#contentindex div.describe div.screenshot{
-  width: 80%;
-  margin: 0 100px;
 }
+
+
+
+
+@media (max-width: 1286px){
+div.contentindex #com li{
+ margin-left: 500px;
+}
+div.contentindex #com li a{
+  padding: 18px 30px;
+}
+}
+
+
+
+
+@media (max-width: 1256px){
+div.contentindex #com li{
+ margin-left: 500px;
+}
+div.contentindex #com li a{
+  padding: 18px 28px;
+}
+}
+
+
+
+
+
+@media (max-width: 1216px){
+div.contentindex #com li{
+ margin-left: 500px;
+}
+div.contentindex #com li a{
+  padding: 18px 25px;
+}
+}
+
+
+
+
+
+
+@media (max-width: 1196px){
+div.contentindex #com li{
+ margin-left: 480px;
+}
+div.contentindex #com li a{
+  padding: 18px 21px;
+}
+}
+
+
+
+
+@media (max-width: 1186px){
+div.contentindex #com li{
+ margin-left: 470px;
+}
+div.contentindex #com li a{
+  padding: 18px 18px;
+}
+}
+
+
+
+
+@media (max-width: 1156px){
+div.contentindex #com li{
+ margin-left: 420px;
+}
+div.contentindex #com li a{
+  padding: 18px 14px;
+}
+}
+
+
+
+
+@media (max-width: 1116px){
+div.contentindex #com li{
+ margin-left: 400px;
+}
+div.contentindex #com li a{
+  padding: 18px 10px;
+}
+}
+
+
+
+
+
+@media (max-width: 1096px){
+div.contentindex #com li{
+ margin-left: 390px;
+}
+div.contentindex #com li a{
+  padding: 18px 8px;
+}
+}
+
+
+
+
+
+
+@media (max-width: 996px){
+div.contentindex #com li{
+ margin-left: 480px;
+}
+div.contentindex #com li a{
+  padding: 18px 25px;
+}
+div.contentindex #com li{
+ margin-left: 300px;
+}
+div.contentindex #com li a{
+  padding: 18px 5px;
+}
+}
+
+
+
+
+@media (max-width: 986px){
+div.contentindex #com li{
+ margin-left: 480px;
+}
+div.contentindex #com li a{
+  padding: 18px 25px;
+}
+}
+
+
 
  @media (max-width: 974px){
-  #contentindex div.com h3.t1{
+  div.contentindex #com h3.t1{
     font-size: 105px; }
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
     font-size: 30px;}
-    #contentindex div.describe div.text h2{
-      margin-top: 70px;
-  margin-left: 80px;
-font-size: 17px; 
-
-}
-#contentindex div.describe div.text p{ 
-  width: 50%;
-  font-size: 14px;
-   margin: 0 90px;
-}
   }
+
+
+
+
+
+
 @media (max-width: 961px){
-   nav label.logo{
+   nav label.logo a{
    	 font-size: 30px;
    	 padding-left: 50px;
    }
-   #contentindex div.com h3.t1{
+   div.contentindex #com h3.t1{
     font-size: 90px; }
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
     font-size: 27px; }
-    #contentindex div.describe div.text h2{
-  margin-left: 60px;
-font-size: 16px; 
-
-}
-#contentindex div.describe div.text p{ 
-  width: 50%;
-  font-size: 13px;
-  margin: 0 70px;
-}
-
 }					
+
+
+
+
+
+
 @media (max-width: 862px){
   nav label.checkbtn{
   	display: block;}
@@ -342,57 +507,48 @@ font-size: 16px;
    	top:80px;
    }
 
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
       padding-top: 38vh;
   }
-  #contentindex div.describe div.text h2{
-  
-font-size: 13px; 
+}
 
-}
-#contentindex div.describe div.text p{ 
-  width: 50%;
-  font-size: 12px;
-  
-}
-  
-}
+
+
+
+
+
+
 @media (max-width: 745px){
-  #contentindex div.com h3.t1{
+  div.contentindex #com h3.t1{
     font-size: 55px; }
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
     font-size: 25px;}
     
- #contentindex div.describe div.text h2{
-  
- margin-left:  40px;
-
-}
-#contentindex div.describe div.text p{ 
-  margin: 0 50px;
-}
   }
   
+
+
+
+
+
+
   @media (max-width: 525px){
-  #contentindex div.com h3.t1{
+  div.contentindex #com h3.t1{
     font-size: 45px; }
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
       padding-top: 39vh;
     font-size: 18px;}
-    #contentindex div.describe div.text h2{
-  
- margin-left:  30px;
-
-}
-#contentindex div.describe div.text p{ 
-  margin: 0 35px;
-}
   }
+
+
+
+
+
 @media (max-width: 426px){
 	nav label.checkbtn{
     float: right;
     font-size: 25px;}
-    nav label.logo{
+    nav label.logo a{
     font-size: 30px;
      padding: 0 30px;
   }
@@ -428,17 +584,16 @@ font-size: 13px;
     left:0;
     top:80px;
    }
-    #contentindex div.describe div.text h2{
-  font-size: 11px
- margin-left:  20px;
-
-}
-#contentindex div.describe div.text p{ 
-  font-size: 8px;
-  margin: 0 0;
-}
-   
+    
 }	
+
+
+
+
+
+
+
+
 @media (max-width: 412px){
   nav label.checkbtn{
     float: right;margin:0;
@@ -450,35 +605,50 @@ font-size: 13px;
   
   
 } 
+
+
+
+
+
+
+
 @media (max-width: 344px){
-  #contentindex div.com h3{
+  div.contentindex #com h3{
     padding-top: 230px;
   }
 
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
       padding-top: 42vh;
       font-size: 14px;}
     }
   nav label.checkbtn{
     padding-top: 2px;
    font-size: 20px;}
-    nav label.logo{
+    nav label.logo a{
     font-size: 23px;
   }
 }
+
+
+
+
+
+
+
+
 @media (max-width: 269px){
   nav label.checkbtn{
    font-size: 18px;
    padding-right: 40px;}
-    nav label.logo{
+    nav label.logo a{
     font-size: 20px;
   }
-  #contentindex div.com h3{
+  div.contentindex #com h3{
     padding-top: 170px;
   }
-  #contentindex div.com h3.t1{
+  div.contentindex #com h3.t1{
     font-size: 27px; }
-    #contentindex div.com h3.t2{
+    div.contentindex #com h3.t2{
     font-size: 10px;}
 }
 
